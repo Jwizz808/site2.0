@@ -8,20 +8,21 @@
   <link rel="icon" href="favicon.ico">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/c2549a7b5a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
   <div id="home">
-    <div class="home_title">
-      <p class="home_title_joshua">Joshua</p>
-      <p class="home_title_parker">Parker</p>
+    <div class="home-title">
+      <p class="home-title-joshua">Joshua</p>
+      <p class="home-title-parker">Parker</p>
     </div>
-    <img class="home_img" src="home.png" alt="home-img" width="100%">
+    <img class="home-img" src="home.png" alt="home-img" width="100%">
   </div>
 
-  <div class="topbar">
+  <div class="nav">
     <nav>
       <a href="#home">
         <img class="icon" src="icon.png" alt="icon-img" height="70px" width="70px">
@@ -40,32 +41,31 @@
     <div id="about">
       <h1>About</h1>
       <hr>
-      <p>I am a student at <a target="_blank" href="https://www.harvard.edu">Harvard University</a> with a passion for building in both the physical and digital realms. My research focuses on the application of non-invasive
-      hydropower in Native Hawaiian fishponds, and has been supported by the <a target="_blank" href="https://www.cstl.org/cleantech/">International CleanTech Competition</a>, <a target="_blank" href="https://www.societyforscience.org/isef/">International Science and Engineering
-      Fair</a>, <a target="_blank" href="https://www.aises.org/">American Indian Science and Engineering Society</a>, and <a target="_blank" href="https://www.hawaiiacademyofscience.org/ps3">Pacific Symposium for Science and Sustainability</a>. I am a member of <a
-      target="_blank" href="https://www.ctlhawaii.org/">Center for Tomorrow's Leaders</a>, <a target="_blank" href="https://purplemaia.org/">Purple Maiʻa Foundation</a>, and <a target="_blank" href="https://www.nalukai.org/">Nalukai Academy</a>.</p>
-      <table class="interests_education">
+      <p>Aloha! My name is Joshua Parker. I’m a student at Harvard University who loves to build in both the physical and digital realms. That includes LEGOs, websites, and everything in between.</p>
+      <table class="interests-education">
         <tr>
           <td class="interests">
             <h2>Interests</h2>
-            <ul class="interests_list">
+            <ul class="interests-list">
               <li>Web Development</li>
               <li>Digital Startups</li>
               <li>Prototyping</li>
               <li>Surfing</li>
             </ul>
           </td>
-          <td>
+          <td class="education">
             <h2>Education</h2>
-            <p><a target="_blank" href="https://www.harvard.edu">Harvard University</a></p>
-            <p class="education_info">Computer Science Major</p>
-            <p><a target="_blank" href="https://www.ksbe.edu/education/kapalama/high_school/">Kamehameha Schools Kapālama</a></p>
-            <p class="education_info">High School</p>
+            <div class="harvard-wrapper">
+              <p><a target="_blank" href="https://www.harvard.edu">Harvard University</a></p>
+              <p class="education-info">BA, Computer Science</p>
+            </div>
+            <p><a target="_blank" href="https://www.ksbe.edu/education/kapalama/high_school/">Kamehameha Kapālama</a></p>
+            <p class="education-info">High School</p>
           </td>
         </tr>
       </table>
       <h2 class="skills">Skills</h2>
-      <table class="skills_table">
+      <table class="skills-table">
         <tr>
           <td>
             <i class="fab fa-html5 fa-3x" style="color:#38B6FF"></i>
@@ -95,8 +95,8 @@
           </td>
         </tr>
       </table>
-      <div class="resume_outer">
-        <a class="resume_button" target="_blank" href="https://drive.google.com/file/d/15LM6HqaJmluhD3F-tJXgwAVGY0IMP3Y1/view?usp=sharing">
+      <div class="resume-wrapper">
+        <a class="resume-button" target="_blank" href="files/resume.pdf">
         <div class="resume">
           <p>Download Resume</p>
         </div>
@@ -107,19 +107,51 @@
     <div id="projects">
       <h1>Projects</h1>
       <hr>
-
+      <div class="project-wrapper">
+        <a target="_blank" href="https://www.hawaiianhydropower.com/">
+          <h2>Hawaiian Hydropower</h2>
+          <h3>Founder</h3>
+          <div>
+            <div class="project-skill">
+              <p>Arduino</p>
+            </div>
+            <div class="project-skill">
+              <p>C++</p>
+            </div>
+            <div class="project-skill">
+              <p>Excel</p>
+            </div>
+          </div>
+          <p>Conducted independent research on the application of non-invasive hydropower in Native Hawaiian fishponds as a source of renewable energy for restoration efforts and nearby communities. To date, Hawaiian Hydropower has provided 100% renewable energy for three fishponds and generated over $17,000 in outside funding.</p>
+        </div>
+        </a>
+      <div class="project-wrapper">
+        <a target="_blank" href="https://kanakakanvasapp.glideapp.io/">
+          <h2>Kānaka Kanvas</h2>
+          <h3>App Developer</h3>
+          <div>
+            <div class="project-skill">
+              <p>Glide</p>
+            </div>
+            <div class="project-skill">
+              <p>Adobe</p>
+            </div>
+          </div>
+          <p>Developed and maintained Kānaka Kanvas, an educational app that equips students with educational resources, interactive communication with their peers, and investment opportunities to fund their startups. For the first month after release, over 60 aspiring entrepreneurs have signed up for and are regular users of Kānaka Kanvas.</p>
+        </a>
+      </div>
     </div>
 
     <div id="posts">
       <h1>Posts</h1>
       <hr>
-
+      <p>Working on it...</p>
     </div>
 
     <div id="contact">
       <h1>Contact</h1>
       <hr>
-      <p>Perhaps one day there will be a proper contact form on this site. Unfortunately, that day has yet to come, so please feel free to reach out via email, LinkedIn, or GitHub (linked below).</p>
+      <p>Perhaps one day I'll set up a proper contact form on this site. Unfortunately, that day has yet to come, so please feel free to reach out via email, LinkedIn, or GitHub (linked below).</p>
       <div class="contact">
         <p><a target="_blank" href="mailto:alohajaypee@gmail.com">Email</a> | <a target="_blank" href="https://www.linkedin.com/in/joshuaparkerhawaii/">LinkedIn</a> | <a target="_blank" href="https://github.com/Jwizz808">GitHub</a></p>
       </div>
