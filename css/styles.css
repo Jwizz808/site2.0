@@ -1,7 +1,7 @@
 body{
   margin: 0;
   background-color: black;
-  font-family: "Roboto", sans-serif;
+  font-family: "Titillium", sans-serif;
   font-weight: lighter;
   text-decoration: none;
 }
@@ -12,7 +12,7 @@ a{
 }
 
 h1, h2{
-  font-family: "Racing Sans One", cursive;
+  font-family: "Titillium", sans-serif;
 }
 
 hr{
@@ -21,7 +21,7 @@ hr{
   margin: 0;
 }
 
-.home_title{
+.home-title{
   position: absolute;
   display: inline-block;
   left: 12%;
@@ -32,18 +32,18 @@ hr{
   font-weight: 100;
 }
 
-.home_title_joshua{
+.home-title-joshua{
   color: #38B6FF;
   margin: 0;
 }
 
-.home_title_parker{
+.home-title-parker{
   color: white;
   margin: 0;
   text-indent: 30%;
 }
 
-.home_img{
+.home-img{
   position: absolute;
   display: inline-block;
   width: 25%;
@@ -52,30 +52,35 @@ hr{
   right: 10%;
 }
 
-.topbar a{
+.nav{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  z-index: 10;
+}
+
+.nav a{
   text-align: center;
   color: white;
   text-decoration: none;
   font-size: 20px;
 }
 
-.topbar ul{
+a:hover{
+  color: #38B6FF;
+  transition: 0.7s;
+}
+
+.nav ul{
   width: auto;
   float: right;
   margin-right: 25px;
 }
 
-.topbar li{
+.nav li{
   display: inline-block;
   padding: 20px 15px;
-}
-
-.topbar{
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: black;
-  z-index: 10;
 }
 
 .icon{
@@ -89,7 +94,7 @@ hr{
   line-height: 25px;
 }
 
-.interests_education{
+.interests-education{
   width: 100%;
   padding: 0;
 }
@@ -99,11 +104,19 @@ hr{
   width: 50%;
 }
 
-.interests_list{
+.education{
+  vertical-align: top;
+}
+
+.harvard-wrapper{
+  margin-bottom: 15px;
+}
+
+.interests-list{
   padding-left: 25px;
 }
 
-.education_info{
+.education-info{
   color: #38B6FF;
   line-height: 2px;
 }
@@ -112,22 +125,18 @@ hr{
   text-align: center;
 }
 
-.skills_table td{
-  width: 33%;
-}
-
-.skills_table{
+.skills-table{
   width: 100%;
   text-align: center;
 }
 
-.resume_outer{
-  width: 155px;
-  margin: auto;
+.skills-table td{
+  width: 33%;
 }
 
-.resume p{
-  margin: 0;
+.resume-wrapper{
+  width: 155px;
+  margin: auto;
 }
 
 .resume{
@@ -139,14 +148,43 @@ hr{
   border-radius: 25px;
 }
 
-a:hover{
-  color: #38B6FF;
-  transition: 1s;
+.resume p{
+  margin: 0;
 }
 
 .resume:hover{
   background-color: #38B6FF;
-  transition: 1s;
+  transition: 0.7s;
+}
+
+.project-wrapper{
+  border-style: solid;
+  border-width: medium;
+  border-color: #38B6FF;
+  border-radius: 25px;
+  padding: 10px 20px;
+  margin: 20px 0 0 0;
+}
+
+.project-wrapper h2,h3,p{
+  margin: 10px 0;
+}
+
+.project-wrapper h3{
+  font-weight: normal;
+}
+
+.project-skill{
+  display: inline-block;
+  background-color: #38B6FF;
+  color: black;
+  padding: 2px 7px;
+  margin: 0 4px 0 0;
+  border-radius: 15px;
+}
+
+.project-skill p{
+  margin: 0;
 }
 
 .contact{
@@ -174,8 +212,8 @@ a:hover{
   position: relative;
   background-color: black;
   color: white;
-  padding-top: 100px;
-  margin-top: -100px;
+  padding-top: 90px;
+  margin-top: -90px;
   z-index: 4;
 }
 
@@ -183,8 +221,8 @@ a:hover{
   position: relative;
   background-color: black;
   color: white;
-  padding-top: 100px;
-  margin-top: -100px;
+  padding-top: 90px;
+  margin-top: -90px;
   z-index: 3;
 }
 
@@ -192,8 +230,8 @@ a:hover{
   position: relative;
   background-color: black;
   color: white;
-  padding-top: 100px;
-  margin-top: -100px;
+  padding-top: 90px;
+  margin-top: -90px;
   z-index: 2;
 }
 
@@ -201,7 +239,7 @@ a:hover{
   position: relative;
   background-color: black;
   color: white;
-  padding-top: 100px;
-  margin-top: -100px;
+  padding-top: 90px;
+  margin-top: -90px;
   z-index: 1;
 }
